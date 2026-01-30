@@ -19,7 +19,7 @@ const Timetable = () => {
         color: COLORS[0]
     })
 
-    const handleSubmittt = (e) => {
+    const handleSubmit = (e) => {
         e.preventDefault()
         if (editingClass) {
             setClasses(prev => prev.map(c => c.id === editingClass.id ? { ...formData, id: c.id } : c))
