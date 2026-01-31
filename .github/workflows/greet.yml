@@ -1,0 +1,23 @@
+name: Welcome Bot
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    
+    steps:
+      - name: Greet new issue creator
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '👋 Hey @' + context.payload.issue.user.login + '! Thanks for opening this issue. Our team will review it shortly. Have a great day! 🚀'
+            })
