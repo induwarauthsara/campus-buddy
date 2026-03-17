@@ -1,5 +1,7 @@
 # Campus Buddy
 
+Campus Buddy is a student-focused platform for managing campus productivity and day-to-day study workflows.
+
 The final goal of this product is to build a SaaS application.
 
 ## React + Vite
