@@ -12,6 +12,13 @@
   width: 100%;
 }
 
+.app-footer {
+  padding: var(--spacing-lg);
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+  text-align: center;
+}
+
 @media (max-width: 768px) {
   .main-content {
     padding: var(--spacing-md);
