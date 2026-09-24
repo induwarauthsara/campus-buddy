@@ -41,6 +41,7 @@ function App() {
                 <main className="main-content">
                     {renderContent()}
                 </main>
+                <footer className="app-footer">Lovely</footer>
             </div>
         </AppProvider>
     )
